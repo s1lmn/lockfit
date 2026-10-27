@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#0A1016"
+  tools:context=".ExerciseUnlockActivity">
+
+  <androidx.camera.view.PreviewView
+    android:id="@+id/previewView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22000000" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#B8142028"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+      <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LockFit Camera Session"
+        android:textColor="#FFF9EF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Подготовка камеры..."
+        android:textColor="#D9E7E4"
+        android:textSize="14sp" />
+
+      <TextView
+        android:id="@+id/personStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Ищем человека в кадре"
+        android:textColor="#E9C46A"
+        android:textSize="13sp" />
+    </LinearLayout>
+
+    <Space
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#C9182430"
+      android:orientation="vertical"
+      android:padding="18dp">
+
+      <TextView
+        android:id="@+id/challengeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Челлендж"
+        android:textColor="#FFF9EF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Инструкция появится здесь"
+        android:textColor="#D9E7E4"
+        android:textSize="14sp" />
+
+      <TextView
+        android:id="@+id/repetitionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="0 / 0"
+        android:textColor="#67E6B1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/qualityText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Качество позы: ожидаем"
+        android:textColor="#E9C46A"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/detailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Стань боком к камере и держи все тело в кадре"
+        android:textColor="#B5C7C4"
+        android:textSize="13sp" />
+
+      <TextView
+        android:id="@+id/debugText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="debug"
+        android:textColor="#8FA4A1"
+        android:textSize="12sp" />
+
+      <TextView
+        android:id="@+id/hintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Назад = отмена сессии"
+        android:textColor="#8FA4A1"
+        android:textSize="12sp" />
+    </LinearLayout>
+  </LinearLayout>
+</FrameLayout>

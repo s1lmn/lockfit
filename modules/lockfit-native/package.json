@@ -1,0 +1,12 @@
+{
+  "name": "lockfit-native",
+  "version": "0.1.0",
+  "description": "Local Expo module for LockFit Android integrations.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}

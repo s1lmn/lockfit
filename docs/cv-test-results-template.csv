@@ -1,0 +1,1 @@
+run_id,tester_id,device_tier,device_model,android_version,exercise,scenario,lighting,body_side,ground_truth_valid_reps,ground_truth_invalid_attempts,counted_reps,false_positive_reps,challenge_expected,challenge_actual,tracking_losses,notes

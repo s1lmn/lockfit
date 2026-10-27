@@ -1,0 +1,2 @@
+minimumReleaseAgeExclude:
+  - react-native-screens@4.26.0

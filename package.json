@@ -1,0 +1,40 @@
+{
+  "name": "lockfit",
+  "description": "Android-first social app blocker with exercise-based unlock flow.",
+  "license": "MIT",
+  "private": true,
+  "version": "0.1.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@react-navigation/native": "7.3.8",
+    "@react-navigation/native-stack": "7.17.10",
+    "expo": "~57.0.4",
+    "expo-dev-client": "~57.0.5",
+    "expo-modules-core": "~57.0.3",
+    "expo-sqlite": "~57.0.0",
+    "expo-status-bar": "~57.0.0",
+    "react": "19.2.3",
+    "react-native": "0.86.0",
+    "react-native-gesture-handler": "3.0.2",
+    "react-native-safe-area-context": "5.8.0",
+    "react-native-screens": "4.26.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "prebuild": "expo prebuild --platform android",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:js": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:native": "cd android && ./gradlew :lockfit-native:testReleaseUnitTest",
+    "lint:android": "cd android && ./gradlew :lockfit-native:lintRelease :app:lintRelease",
+    "build:friend": "cd android && ./gradlew :app:assembleFriend",
+    "build:play": "cd android && ./gradlew :app:bundleRelease",
+    "verify": "node node_modules/typescript/bin/tsc --noEmit && node --experimental-strip-types --test tests/*.test.mjs",
+    "verify:all": "pnpm verify && cd android && ./gradlew :lockfit-native:testReleaseUnitTest :lockfit-native:lintRelease :app:lintRelease :app:assembleFriend",
+    "typecheck": "tsc --noEmit"
+  }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="lockfit_accessibility_service_label">LockFit: блокировка приложений</string>
+  <string name="lockfit_accessibility_description">Определяет открытие выбранного приложения и показывает блокировку после исчерпания установленного лимита. Содержимое экрана и вводимый текст не читаются.</string>
+</resources>
